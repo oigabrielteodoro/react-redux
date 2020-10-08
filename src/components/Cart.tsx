@@ -6,8 +6,6 @@ import { CartItem } from 'store/modules/cart/types';
  
 const Cart: React.FC = () => {
   const cart = useSelector<ApplicationState, CartItem[]>(state => state.cart.items);
-   
-  console.log(cart);
 
   return (
     <table>
