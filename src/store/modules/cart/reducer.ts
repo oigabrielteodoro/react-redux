@@ -5,8 +5,10 @@ import { CartState } from './types';
 const INITIAL_STATE: CartState = {
   items: [],
 }
+ 
+const cart: Reducer<CartState> = (state, action) => {
+  console.log(state, action);
 
-const cart: Reducer<CartState> = () => {
   return INITIAL_STATE;
 } 
 
